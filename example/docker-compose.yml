@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  compass:
+    container_name: ruby_compass
+    image: madan1232/ruby_compass:latest
+    volumes:
+      - ./gem:/usr/src/app
+    command: bash -c "bundle install && compass watch"
