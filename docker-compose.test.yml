@@ -3,6 +3,3 @@ version: '3'
 services:
   sut:
     build: .
-    volumes:
-      - ./:/usr/src/app
-    command: docker_auto_test.sh
